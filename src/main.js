@@ -40,3 +40,10 @@ window.onbeforeunload = ()=>{
     const string = JSON.stringify(hashMap)
     localStorage.setItem('websites',string)
 }
+
+$(document).on('keypress',(e)=>{
+    const {key} = e
+    if(key==='Enter'){
+        $(".searchForm").submit()
+    }
+})

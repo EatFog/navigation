@@ -169,5 +169,13 @@ window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
   localStorage.setItem('websites', string);
 };
+
+$(document).on('keypress', function (e) {
+  var key = e.key;
+
+  if (key === 'Enter') {
+    $(".searchForm").submit();
+  }
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.0fd79c52.js.map
+//# sourceMappingURL=main.ca117904.js.map
